@@ -1,0 +1,6 @@
+build/*
+data/*.csv
+tp2/*
+metnum.cpython-37m-x86_64-linux-gnu.so
+notebooks/metnum.cpython-37m-x86_64-linux-gnu.so
+experimentos/__pycache__

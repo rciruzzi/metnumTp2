@@ -1,0 +1,12 @@
+mkdir build
+cd build/ && rm -rf *
+cmake \
+  -DPYTHON_EXECUTABLE="$(which python)" \
+  -DCMAKE_BUILD_TYPE=Release ..
+make install
+cd ..
+rm metnum.cpython-37m-x86_64-linux-gnu.so
+rm experimentos/metnum.cpython-37m-x86_64-linux-gnu.so
+cp notebooks/metnum.cpython-37m-x86_64-linux-gnu.so .
+cp notebooks/metnum.cpython-37m-x86_64-linux-gnu.so experimentos/metnum.cpython-37m-x86_64-linux-gnu.so
+
